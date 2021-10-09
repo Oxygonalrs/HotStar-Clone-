@@ -1,2 +1,2 @@
-# HotStar-Clone-
+# HotStar-Clone
 This is mostly front and project
