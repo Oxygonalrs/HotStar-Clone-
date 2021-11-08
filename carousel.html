@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="flic.css">
+  <style>
+    * { box-sizing: border-box; 
+    margin: 0;
+  padding: 0;}
+
+    body { font-family: sans-serif; 
+    }
+
+    .carousel {
+      background: #EEE;
+    }
+
+    .carousel-cell {
+      width: 1265.03px;
+      height: 400px;
+      background: #8C8;
+      border-radius: 5px;
+      counter-increment: carousel-cell;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+      text-align: center;
+      content: counter(carousel-cell);
+      line-height: 200px;
+      font-size: 80px;
+      color: white;
+    }
+    .center{
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Flickity HTML init -->
+  <div class="center">
+    <div class="carousel" style="background: none !important;" data-flickity='{ "wrapAround": true}'>
+      <div class="carousel-cell" style="background: none;"></div>
+      <div class="carousel-cell" style="background: none;"></div>
+      <div class="carousel-cell" style="background: none;"></div>
+      <div class="carousel-cell" style="background: none;"></div>
+      <div class="carousel-cell" style="background: none;"></div>
+    </div>
+  </div>
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    // external js: flickity.pkgd.js
+
+  </script>
+</body>
+</html>
